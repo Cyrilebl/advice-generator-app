@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+:root {
+  --title-btn: hsl(150, 100%, 66%);
+  --text: hsl(193, 38%, 86%);
+
+  --mainBackground: hsl(218, 23%, 16%);
+  --itemBackground: hsl(217, 19%, 24%);
+  --line: hsl(217, 19%, 38%);
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  background-color: var(--mainBackground);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section {
+  background-color: var(--itemBackground);
+  text-align: center;
+  border-radius: 7px;
+  padding: 30px 40px 50px 40px;
+  width: 350px;
+  position: relative;
+}
+
+h1 {
+  font-size: 0.7em;
+  color: var(--title-btn);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+p {
+  font-size: 1.3em;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.divider {
+  width: 350px;
+}
+
+.dice {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  background-color: var(--title-btn);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 200px;
+  cursor: pointer;
+}
+
+.dice img {
+  margin-top: 4px;
+  width: 20px;
+}
+
+.dice:hover {
+  box-shadow: 0 0 20px var(--title-btn);
+}
+
+@media all and (max-width: 460px) {
+  section {
+    padding: 30px 20px 60px 20px;
+    width: 300px;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  .divider {
+    width: 300px;
+  }
+
+  .dice {
+    padding: 15px 20px;
+  }
+
+  .dice img {
+    margin-top: 4px;
+    width: 25px;
+  }
+}
