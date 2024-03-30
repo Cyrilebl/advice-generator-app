@@ -43,6 +43,7 @@ p {
 
 .divider {
   width: 350px;
+  height: 100%;
 }
 
 .dice {
@@ -61,6 +62,7 @@ p {
 .dice img {
   margin-top: 4px;
   width: 20px;
+  height: 100%;
 }
 
 .dice:hover {
